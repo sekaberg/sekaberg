@@ -1,0 +1,78 @@
+:root {
+    --background-color: rgb(44, 54, 63);
+    --border-color: rgba(242, 245, 234, 0.1);
+    --font-color: rgb(242, 245, 234);
+    --low-contrast: rgb(187, 199, 164);
+    --high-contrast-one: rgb(56, 145, 166);
+    --high-contrast-two: rgb(219, 84, 97);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, a, p, span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: var(--font-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Nav bar styling */
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav > .nav-section {
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 4rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+nav > .nav-section > a {
+    font-size: 125%;
+}
+
+#nav-logo-section {
+    justify-content: flex-start;
+}
+
+#nav-logo-section,
+#nav-contact-section {
+    flex-basis: calc(100% / 5);
+}
+
+#nav-pages-section {
+    flex-grow: 1;
+}
+
+.logo {
+    height: 5vh;
+}
+
+
+
+/* Main styling */
+main {
+    flex-grow: 1;
+}
