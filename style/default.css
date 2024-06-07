@@ -23,7 +23,6 @@ body {
 
 h1, h2, h3, a, p, span {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 600;
     color: var(--font-color);
 }
 
@@ -49,6 +48,11 @@ nav > .nav-section {
     justify-content: center;
 }
 
+nav > .nav-section > a {
+    font-size: 100%;
+    font-weight: 600;
+}
+
 nav > .nav-section > a > i {
     font-size: 175%;
     color: var(--font-color);
@@ -56,6 +60,7 @@ nav > .nav-section > a > i {
 
 #nav-logo-section {
     justify-content: flex-start;
+    position: static;
 }
 
 #nav-logo-section,
@@ -67,6 +72,8 @@ nav > .nav-section > a > i {
     flex-grow: 1;
 }
 
+
+
 .logo {
     font-size: 150%;
 }
@@ -76,4 +83,30 @@ nav > .nav-section > a > i {
 /* Main styling */
 main {
     flex-grow: 1;
+}
+
+
+
+/* Others */
+@media only screen and (max-width: 800px) {
+    #nav-logo-section {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    nav {
+        display: grid;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav > .nav-section {
+        padding: 1rem 1rem;
+        display: block;
+    }
+
+    nav > .nav-section > a {
+        padding: 0.4rem 0%;
+        display: flex;
+    }
 }
