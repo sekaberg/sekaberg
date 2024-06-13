@@ -22,16 +22,6 @@ body {
 
 
 
-#child {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
-    box-sizing: content-box; /* So the width will be 100% + 17px */
-}
-
-
-
 h1, h2, h3, a, p, span {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--font-color);
@@ -44,103 +34,16 @@ a {
 
 
 /* Nav bar styling */
-nav {
-    display: flex;
-    width: 100%;
-    border-bottom: 1px solid var(--border-color);
-}
-
-nav > .nav-section {
-    padding: 2rem 2rem;
-    display: flex;
-    gap: 4rem;
-    border-left: 1px solid var(--border-color);
-    align-items: center;
-    justify-content: center;
-}
-
-nav > .nav-section > a {
-    font-size: 100%;
-    font-weight: 600;
-}
-
-nav > .nav-section > a > i {
-    color: var(--font-color);
-}
-
-#nav-logo-section {
-    justify-content: flex-start;
-    position: static;
-}
-
-#nav-logo-section,
-#nav-contact-section {
-    font-size: 175%;
-    flex-basis: calc(100% / 5);
-}
-
-#nav-pages-section {
-    flex-grow: 1;
-}
-
-
-
-.logo {
-    font-size: 150%;
-}
-
 
 
 /* Main styling */
-main {
-    display: block;
-    color: var(--font-color);
-    flex-grow: 1;
-
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
 
 
 /* Others */
 @media only screen and (max-width: 800px) {
-    #nav-logo-section {
-        visibility: hidden;
-        position: absolute;
-    }
-
-    nav {
-        display: grid;
-    }
+    
 }
 
 @media only screen and (max-width: 500px) {
-    nav {
-        display: flex;
-    }
-
-    nav > .nav-section {
-        padding: 1rem 1rem;
-        display: block;
-    }
-
-    nav > .nav-section > a {
-        padding: 0.4rem 0%;
-        display: flex;
-    }
-
-    #nav-contact-section {
-        flex-basis: calc(100% / 3);
-    }
-
-    #nav-contact-section > a {
-        align-items: center;
-        justify-content: center;
-    }
-
-    #nav-contact-section > a > i {
-        font-size: 150%;
-    }
+    
 }
