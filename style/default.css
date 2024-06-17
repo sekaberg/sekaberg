@@ -7,11 +7,16 @@
     --high-contrast-two: rgb(219, 84, 97);
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     height: 100vh;
+    padding: 0px;
     margin: 0px;
     overflow: hidden;
 }
@@ -20,23 +25,14 @@ body {
     box-sizing: border-box;
 }
 
-
-
 h1, h2, h3, a, p, span {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--font-color);
 }
-
 a {
     text-decoration: none;
 }
 
-
-
-/* Nav bar styling */
-
-
-/* Main styling */
 
 
 /* Others */
