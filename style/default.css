@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
@@ -22,16 +23,14 @@ body {
 }
 
 * {
+    color: var(--font-color);
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
-h1, h2, h3, a, p, span {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--font-color);
-}
-a {
-    text-decoration: none;
-}
 
 
 
