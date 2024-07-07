@@ -33,6 +33,28 @@ body {
 
 
 
+#nav-bar {
+    display: flex;
+    width: 100%;
+}
+
+#nav-bar a {
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+
+#video-container {
+    display: grid;
+    margin: 4rem;
+}
+
+#video-container > iframe {
+    border-radius: 1rem;
+    width: 64rem;
+    height: 36rem;
+}
+
 
 /* Others */
 @media only screen and (max-width: 800px) {
